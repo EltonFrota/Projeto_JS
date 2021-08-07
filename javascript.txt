@@ -1,0 +1,87 @@
+***********INTRODUÇÃO - VARIAVEIS
+
+//strings
+
+var texto = 'Curso de JavaScript'
+
+declaramos uma variavel com a string var
+texto: é o nome da nossa variavel
+= : sever para atribuir(passar um valor para a variavel)
+'Curso de JavaScript' : é a string q vamos armazenar na nossa
+variavel.(Podemos usar tanto as aspas simples ou duplas, desde q 
+no fechamento use a mesma escolhida).
+
+
+
+//number
+
+Nas variaves do tipo number, não existe diferenciação entre inteiro 
+e fracionados no JS, pois todos são do tipo numerico.
+
+var numeroInteiro = -7
+var numeroInteiro = 10
+var numeroFracionado = 3.5
+
+
+//boolean
+
+é verdadeiro ou falso
+
+var teste = true   (verdadeiro)
+var teste = false  falso)
+
+
+====================================================================
+
+alert(variavel) - Não é utilizado em produção. Mas é bastante utilizado
+para debugar codigos. Podemos expor os valores de uma variavel pelo alert
+
+
+---
+document.write(variavel) -> Nos podemos escrever valores dentro do broser. 
+
+Todos os elementos HTML criados na pagina, estão contidos dentro do Objeto
+document.
+
+obs: document>>> ele acessa os conteudo do body
+
+
+---
+
+console.log(variavel)
+
+É uma ferramenta muito importante pra testar valores na console de ferramentas
+do broser. Nos podemos incluir em varios momentos do nosso código 
+
+
+
+
+**************************************************************************************************************
+***********CONCATENAR
+
+UNIFICAR OS VALORES DE NOSSAS VARIAVEIS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

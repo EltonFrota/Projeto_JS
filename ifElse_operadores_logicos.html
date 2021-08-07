@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+    <script>
+
+        /*true && true && true
+        if (2 == 2 || 1 >= 2 || 3 > 10) {
+            document.write('<h1>Verdadeiro</h1>')
+        } else {
+            document.write('<h1>Falso</h1')
+        }
+        */
+    var nota1 = prompt('Nota do Aluno')
+       var faltas = prompt('Faltas do Aluno')
+       var media = 5
+       var faltas_Maximas = 15
+
+       /*   if (nota1 >= media && faltas <= faltas_Maximas) {
+            document.write('<h1>Aprovado</h1>')
+       } else {
+            document.write('<h1>Reprovado</h1>')
+       }
+       */
+
+       //Operador ternário
+
+       var resultado = (nota1 >= media && faltas <= faltas_Maximas) ? 'APROVADO' : 'REPROVADO'
+       document.write(resultado)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
