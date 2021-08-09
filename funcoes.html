@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funções</title>
     <script>
-        //void - Quer dizer que a função apenas executa o script mais não retorna nada para o usuário
-        //retorn - retorna para o usuário o resultado da função.
+        /*void - Quer dizer que a função apenas executa o script mais não retorna nada para o usuário
+        retorn - retorna para o usuário o resultado da função.
 
-        // Objetivo da Função: As funções são criadas, para reutilizar códigos, e pode ser reutilizadas em diversos contextos quantas vezes forem necessário.
+        Objetivo da Função: As funções são criadas, para reutilizar códigos, e pode ser reutilizadas em diversos contextos quantas vezes forem necessário.
 
-
-        function calcularAreaTerreno (largura, comprimento){
-            // Aqui fica a logica da sua função
+        A função pode receber vários parâmetros. Abaixo recebemos 2.
+        Se for passado mais de dois parâmetros, esta função descartará o excedente, pegando os dois primeiros.*/
+      /*  function calcularAreaTerreno (largura, comprimento){
+            // Aqui fica a lógica da sua função
             largura = parseFloat(largura)
             comprimento = parseFloat(comprimento)
             var area = largura + comprimento
@@ -24,6 +25,16 @@
         var comprimento = prompt('Digite a comprimento')
         var area = calcularAreaTerreno(largura, comprimento)
         document.write('O terreno tem ' + area + ' metros quadrados')
+        */
+        
+        function soma( a , b ) {
+        b = b === undefined ? 0 : b //caso o b não seja informado a app não vai quebrar. Pois estamos tratando o b recebendo 0 ou ele mesmo.
+        return a + b
+        }
+        //console.log(soma(7))
+        //console.log(soma(11, 15))
+        //console.log(soma(5, 10, 15, 20)) // O JS desconsiderará o 15 e o 20
+
         
     </script>
 </head>

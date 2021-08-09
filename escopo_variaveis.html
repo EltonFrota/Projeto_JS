@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variáveis</title>
+    <script>
+        /* 
+        O JS possui 3 escopos: global, função e o bloco
+        O escopo global ele inclui todo o script.
+        O escopo função ele corresponde ao conteúdo inserido dentro de uma bloco de função.
+        O escopo de bloco seria aquelas inseridas dentro de comandos, como por exemplo a do switch ou if.
+        */
+       /*ACESSOS
+       Escopo de função e escopo de bloco visualisão o escopo global
+       Escopo de bloco pode ser visualizado pelo escopo global
+       Escopo global não visualiza o escopo de função 
+       
+       */
+
+        var escopo = ' Escopo Global' //variável do escopo global
+        document.write(escopo) //impressão do variável de escopo Global
+        document.write('<br />')
+        //Exemplo escopo de bloco
+        if (true) {
+            var escopo2 = ' Escopo de bloco '//variável do escopo de bloco
+            document.write(escopo + ' - ') //variável do escopo global
+        }
+               
+        document.write(escopo2) //A variãvel sofre uma elevação para o escopo de bloco.
+        document.write('<br />')  
+        //Fim escopo de bloco
+
+        //Exemplo escopo função
+        function x(){
+            var escopo3 = 'Escopo de Função'
+            document.write(escopo + ' - ')
+            document.write(escopo2 + ' - ')              
+        }
+        
+        x()
+
+        document.write(escopo3)//O escopo Global não tem acesso a variável do escopo de função
+        if(true){
+            document.write(escopo3) // O Escopo de bloco tbm não tem aceso ao escopo da função.
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
