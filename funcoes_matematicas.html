@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funções Matemáticas</title>
     <script>
+        //"O objeto Math permite que você execute tarefas matemáticas."
+        //https://www.w3schools.com/jsref/jsref_obj_math.asp
+        //"Math não é um construtor. Todas as propriedades / métodos do Math podem ser chamados usando o Math como um objeto, sem criá-lo:"
+
+        var x = Math.ceil(10.998) //Essa função arredonda o numero para cima.
+        document.write(x + '<br />')
         
+        var y = Math.floor(10.998) // Independente da fração ele sempre vai pegar o numero inteiro.
+        document.write(y + '<br />')
+
+        var z = Math.round(10.598) // menor .5 ele arredonda para baixo >= .5 ele arredonda para ciama.
+        document.write(z + '<br />')
+
+        var t = Math.random() // Ele dar um valor aleatório ente 0 e 1
+        document.write(t + '<br />')
+
     </script>
 </head>
 <body>
