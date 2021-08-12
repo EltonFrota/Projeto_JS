@@ -8,9 +8,20 @@
     <script>
         var data = new Date()
          
-        document.write(data.getDate() + '/' + (data.getMonth() + 1 )+'/' + data.getFullYear() )
+        //document.write(data.getDate() + '/' + (data.getMonth() + 1 )+'/' + data.getFullYear() )
         //OBS: data.getMonth() conta os meses de 0 a 11 e pra ficar com o marcando igual o mundo real basta add + 1 
-        //10/08/2021
+        //11/08/2021
+
+        //Adicionar ou Remover dias da Data
+       /* document.write(data.toString() + '<hr />')
+        data.setDate(data.getDate() + 1) // 
+        document.write(data.toString() + '<hr />')*/
+
+        document.write(data.toString() + '<hr />')
+        data.setDate(data.getDate() + 1) //Neste caso estamos atuando no dia do mês add um dia. Tb podemos tira bastando para isso trocar o operado pelo sina de menos "-"
+        document.write(data.toString() + '<hr />')
+        
+
     </script>
 </head>
 <body>
