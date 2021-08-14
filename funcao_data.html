@@ -15,7 +15,7 @@
         //Adicionar ou Remover dias da Data
        /* document.write(data.toString() + '<hr />')
         data.setDate(data.getDate() + 1) // 
-        document.write(data.toString() + '<hr />')*/
+        document.write(data.toString() + '<hr />')
 
         document.write(data.toString() + '<hr />')
         data.setDate(data.getDate() + 1) //Neste caso estamos atuando no dia do mês add um dia. Tb podemos tira bastando para isso trocar o operado pelo sina de menos "-"
@@ -34,7 +34,34 @@
         data.setFullYear(data.getFullYear() + 1) // 
         document.write(data.toString() + '<hr />')
         document.write('<br><br>')
+        */
 
+
+        //Desafio: Quantos dias tem em 15/01/2017 e 23/02/2017
+        var data1 = new Date(2017, 0, 15) //lembrando que o mes vai de 0 a 11.
+        var data2 = new Date(2017, 1, 23)
+
+        document.write(data1.toString() + '<hr />')
+        document.write(data2.toString() + '<hr />')
+
+       //A técnica é converter as data para algo que possamos calcular.
+        document.write(data1.getTime() + '<hr />')
+        document.write(data2.getTime() + '<hr />')
+
+        var milisegundos = Math.abs(data1.getTime() - data2.getTime())
+        document.write(milisegundos)
+
+        document.write('<br /><br /><hr />')
+        /* 1 dia tem 24h, cada Hora tem 60 minutos,
+        cada Minuto tem 60 tem segundos,
+        e cada segundo tem 1000 milisegundos.
+        Quantos milisegundos existem em um dia?*/
+        var milisegundos_por_dia = 1*24*60*60*1000
+        document.write('1 dia tem ' + milisegundos_por_dia)
+        
+        document.write('<br /><br /><hr />')
+
+        document.write('A diferença entre as datas é de ' + Math.ceil(milisegundos / milisegundos_por_dia) + ' dias.')
     </script>
 </head>
 <body>
