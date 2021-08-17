@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script>
+        function acao (){
+            alert('função disparada')
+        }
+    </script>
+</head>
+<body>
+    <!--Os Eventos são associados a elementos html a partir da definição desses eventos como atributos dos elementos-->
+    <!--<div onclick="acao()" style="background: rgb(71, 70, 70); height: 150px; width: 150px;"></div> <!--onclick: É disparado qdo for dado um clicar no elemento-->
+    <!--<div ondblclick="acao()" style="background: rgb(71, 70, 70); height: 150px; width: 150px;"></div><!--ondblclick: É disparado qdo for dado dois cliques no elemento-->
+    <div onmouseup="acao()" style="background: rgb(71, 70, 70); height: 150px; width: 150px;"></div><!--onmouseup: É disparado qdo um clique em um determinado elemento é liberado-->
+</body>
+</html>
