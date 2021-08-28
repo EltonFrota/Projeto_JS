@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos para Formulários</title>
+    <script>
+        /*Para praticar selecionei 3 eventos mais utilizados:
+        onfocus: Ele é acionado quando o elemento recebe o foco do cursor do mouse.Ou seja quando clicamos no elemento.
+        onblur: Ele é acionado quando o elemento perde o foco.
+        onchange: Ele é acionado quando o estado do elemento é modificado. Muito comum para elemento do tipo select. 
+        */
+        
+    </script>
+</head>
+<body>    
+    <input onfocus="console.log('Recebeu com foco')" onblur="console.log('Perdeu o foco')" type="text"> <!--Estamo usando o console.log, porque o elemento perde o foco e vai para o ok do alert, e ao voltar para o elemento ele aciona novamente gerando um lop-->
+    <br><br><br>
+    <select onchange="console.log('Estado Modificado')">
+        <option>--Selecione--</option>
+        <option value="1">Primeira Opção</option>
+        <option value="2">Segunda Opção</option>
+    </select>
+
+
+</body>
+</html>
