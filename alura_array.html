@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <title>Alura Array</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Comparador de valores</h1>
+        <input />
+        <button>Enviar</button>
+    </div>
     <script>
+        var segredos = [5, 7, 10, 2];
+
+        var input = document.querySelector("input");
+        input.focus();
+
+        function verifica() {
+
+            var achou = false;
+
+            for (var contador = 0; contador < segredos.length; contador++) {
+                if (input.value == segredos[contador]) {
+
+                    alert("Você ACERTOU!!");
+                    achou = true;//transformo o achou em verdadeiro para não executar a mensagem de você errou.
+                    break;
+                }
+            }
+            if (achou == false) {
+                alert("Você ERROU");
+                input.value = ""; //limpa campo
+                input.focus(); //Foca input
+            }
+        }
+        
+        var button = document.querySelector("button");
+        button.onclick = verifica;
 
     </script>
-    <title>Alura Array</title>
-</head>
-<body>
-    <input/>
-    <button>Enviar</button>
 </body>
+
 </html>
