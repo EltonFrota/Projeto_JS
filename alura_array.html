@@ -16,15 +16,17 @@
 </head>
 
 <body>
+
     <div>
         <h1>Comparador de valores</h1>
-        <input />
+        <input id="texto"/>
         <button>Enviar</button>
     </div>
+    
     <script>
         var segredos = [5, 7, 10, 2];
 
-        var input = document.querySelector("input");
+        var input = document.getElementById("texto");
         input.focus();
 
         function verifica() {
@@ -45,7 +47,7 @@
                 input.focus(); //Foca input
             }
         }
-        
+
         var button = document.querySelector("button");
         button.onclick = verifica;
 
