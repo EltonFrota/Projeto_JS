@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Curso</title>
+
+
+    <input/>
+    <button>Click para comparar!</button>
+
+    <script>
+
+        var input = document.querySelector("input");// O querySelector, pega a tag que esta entre ("textarea") e entre aspas, do mundo html e armazena na minha variável input, que pode ser qualquer nome.
+        input.focus();
+        
+
+
+        var numero = Math.round(Math.random() * 10);//sorteia entre 10 um numero.
+
+        function verifica() {
+            if (input.value == numero) { //O input.value, pega a variavel que crieie com o nome input e compara com a variavel numero que é 5, e me retorna verdadeiro ou falso.
+                alert("Você ACERTOU!!");
+            } else {
+                alert("Você ERROU");
+                input.value = ""; // Da mesma foram que eu consigo pegar o valor, eu também consigo inseriu um valor, neste caso eu estou limpando o campo, inserindo um valor vazio.
+                input.focus();// com este comando eu deixo o foco na minha caixa do imput.
+            }
+        }
+        var button = document.querySelector("button");//Agora estou dizendo para o meu querySelector pegar o meu button e armazenar na minha variavel button, que pode ser qualquer nome.
+
+        button.onclick = verifica;//onclick = no clicar.
+        // Com esse comando eu estou dizendo para o botao que no seu clicar, eu quero que vc execute a funcao verifica.
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
