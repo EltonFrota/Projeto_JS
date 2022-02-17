@@ -16,28 +16,23 @@
         var tela = document.querySelector('canvas');
         var pincel = tela.getContext('2d');
 
-        pincel.fillStyle = '#E0F2F7';
-        pincel.fillRect(0, 0, 600, 400);
+        /*cabeça 1*/
+        pincel.fillStyle = 'darkgreen';
+        pincel.fillRect(200, 50, 350 ,300)
+        
+        /*Olho Esquerdo 2*/
+        pincel.fillStyle = 'black';
+        pincel.fillRect(250, 110, 90, 90);
+        pincel.fillRect(410, 110, 90, 90);        
+        
 
-        pincel.fillStyle = 'green';
-        pincel.fillRect(0, 0, 200, 400);
+        /*Nariz 4*/        
+        pincel.fillRect(340, 200, 70, 100);
+        /*
 
-        pincel.fillStyle = '#FF0000';
-        pincel.fillRect(400, 0, 200, 400);
-
-        pincel.fillStyle = '#FFFF00';
-        pincel.beginPath(); // Desenho livre
-        pincel.moveTo(300, 200);
-        pincel.lineTo(200, 400);
-        pincel.lineTo(400, 400);
-        pincel.fill(); //preenche o campo com a cor
-
-        pincel.fillStyle = '#2E2EFE';
-        pincel.beginPath(); /* Começo um novo caminho, pois senão ele continua o caminho anterior.*/
-        pincel.arc(300, 200, 50, 0, 2 * 3.14);
-        pincel.fill();
-
-
+         /*boca 5*/
+        pincel.fillRect(300, 240, 40, 110);
+        pincel.fillRect(410, 240, 40, 110);
 
         /*
          var tela =  document.querySelector('canvas'); // Pego no html o canvas e coloco na minha variavel tela
