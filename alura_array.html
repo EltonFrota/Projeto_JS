@@ -22,15 +22,13 @@
         <button>Enviar</button>
     </div>
     <script>
-        var segredos = [5, 7, 10, 2];
+        
 
         var input = document.querySelector("input");
         input.focus();
-
+        var segredos = [5, 7, 10, 2];
         function verifica() {
-
             var achou = false;
-
             for (var contador = 0; contador < segredos.length; contador++) {
                 if (input.value == segredos[contador]) {
 
