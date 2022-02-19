@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Teste</title>
+</head>
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        
+        var tela = document.querySelector("canvas"); // Crio a tela
+        var pincel = tela.getContext("2d"); // crio um pincel dentro da tela
+
+        pincel.fillStyle = "black"; // cor
+        pincel.beginPath(); // reset
+        pincel.moveTo(50, 50); //cordenadas
+        pincel.lineTo(50, 400); //cordenadas
+        pincel.lineTo(400, 400); //cordenadas
+        pincel.fill(); //preencher com a cor informada
+        
+        pincel.fillStyle = "white"; // cor
+        pincel.beginPath(); // reset
+        pincel.lineTo(100, 175); //cordenadas
+        pincel.lineTo(100, 350); //cordenadas
+        pincel.lineTo(275, 350); //cordenadas
+        pincel.fill(); //preencher com a cor informada
+
+    </script>
+</body>
+</html>
