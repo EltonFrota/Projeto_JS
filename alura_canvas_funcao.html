@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Criando Quadrados</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+
+        function desenhaquadrado(x, y, cor) {
+            var tela = document.querySelector("canvas"); // Crio a tela
+            var pincel = tela.getContext("2d"); // crio um pincel dentro da tela
+
+            pincel.fillStyle = cor; // cor           
+            pincel.fillRect(x, y, 50, 50);
+            pincel.fillStroke = "black"; // cor das linhas do quadrado
+            pincel.strokeRect(x, y, 50, 50); // Criando a linha do quadrado
+            pincel.fill();
+        }
+
+        //Usando a estrutura do FOR
+        for(var x = 0; x < 600; x = x +50){
+            desenhaquadrado(x, 0, "green");
+        }
+
+
+        
+        /*Desenho de varias linhas com WHILE
+        x = 0;            
+            while(x < 600){
+                desenhaquadrado(x, 0, "green");
+                desenhaquadrado(x, 50, "yellow");
+                desenhaquadrado(x, 100, "blue");
+                x = x + 50;
+             
+            }
+        */
+
+
+        /* Desenho de uma linha com WHILE
+        x = 0;            
+         while(x < 600){
+             desenhaquadrado(x, 0, "green");
+             x = x + 50;
+         }
+         */
+
+        /* colocando um quadrado abaixo do outro
+        desenhaquadrado(0, 0, "blue"); //chomo a função passando parametros.
+        desenhaquadrado(0, 50, "yellow");
+        desenhaquadrado(0, 100, "green");
+        // colocando um quadrado do lado do outro
+        desenhaquadrado(0, 0, "blue");
+        desenhaquadrado(50, 0, "yellow");
+        desenhaquadrado(100, 0, "green");
+        */
+    </script>
+</body>
+
+</html>
